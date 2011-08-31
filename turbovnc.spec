@@ -1,7 +1,7 @@
 Summary:	A highly-optimized version of VNC that can be used with real-time video applications
 Name:		turbovnc
 Version:	1.0.2
-Release:	0.1
+Release:	1
 License:	GPL
 Group:		X11/Applications
 Source0:	http://downloads.sourceforge.net/virtualgl/%{name}-%{version}.tar.gz
