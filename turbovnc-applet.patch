@@ -1,0 +1,25 @@
+--- vnc/vnc_unixsrc/Makefile.am~	2011-08-07 09:30:50.000000000 +0200
++++ vnc/vnc_unixsrc/Makefile.am	2011-08-31 21:59:30.533873903 +0200
+@@ -5,7 +5,6 @@
+ endif
+ 
+ mandir = @MANDIR@
+-datadir = @DATADIR@
+ 
+ noinst_SCRIPTS = vncserver
+ noinst_MANS = vncserver.man
+@@ -46,10 +46,10 @@
+ 	$(INSTALL) -m 644 $(srcdir)/vncserver.man $(DESTDIR)/$(mandir)/man1/vncserver.1
+ 	$(INSTALL) -m 644 $(srcdir)/Xvnc/programs/Xserver/Xvnc.man $(DESTDIR)/$(mandir)/man1/Xvnc.1
+ 	$(INSTALL) -m 644 $(srcdir)/Xvnc/programs/Xserver/Xserver.man $(DESTDIR)/$(mandir)/man1/Xserver.1
+-	mkdir -p $(DESTDIR)/$(prefix)/vnc/classes/
+-	$(INSTALL) -m 644 $(srcdir)/classes/index.vnc $(DESTDIR)/$(prefix)/vnc/classes/
+-	$(INSTALL) -m 644 $(srcdir)/classes/VncViewer.jar $(DESTDIR)/$(prefix)/vnc/classes/
+-	$(INSTALL) -m 644 $(srcdir)/classes/README $(DESTDIR)/$(prefix)/vnc/classes/
++	mkdir -p $(DESTDIR)/$(pkgdatadir)/classes/
++	$(INSTALL) -m 644 $(srcdir)/classes/index.vnc $(DESTDIR)/$(pkgdatadir)/classes/
++	$(INSTALL) -m 644 $(srcdir)/classes/VncViewer.jar $(DESTDIR)/$(pkgdatadir)/classes/
++	$(INSTALL) -m 644 $(srcdir)/classes/README $(DESTDIR)/$(pkgdatadir)/classes/
+ 	mkdir -p $(DESTDIR)/$(sysconfdir)/
+ 	$(INSTALL) -m 644 $(srcdir)/turbovncserver.conf $(DESTDIR)/$(sysconfdir)/
+ 	$(INSTALL) -m 644 $(srcdir)/turbovncserver-auth.conf $(DESTDIR)/$(sysconfdir)/

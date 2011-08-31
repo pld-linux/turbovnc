@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=TurboVNC Viewer
+Comment=TurboVNC client application
+Exec=/usr/bin/vncviewer
+Terminal=false
+Type=Application
+Categories=Network;RemoteAccess;
